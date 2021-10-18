@@ -1,3 +1,10 @@
+<?php
+$output="";
+if (isset($_POST['decode'])) {
+    $input = $_POST['decode'];
+    $output = base64_decode($input);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +22,11 @@
 </head>
 <body>
     <h1 style="text-align: center;">Base64 Decoder</h1>
-    <form class="decode_form" method="post">
-        <input id="decode_input" type="text" name="text" class="decode_input" placeholder="Enter Your Text"/>
+    <form action="index.php" class="decode_form" method="post">
+        <input id="decode_input" type="text" name="decode" class="decode_input" placeholder="Enter Your Text"/>
         <button type="submit" id="decode_button" class="decode_button">Decode</button>
     </form>
-    <textarea cols="30" id="decode_output" class="decode_output" rows="10" ></textarea>
+    <textarea cols="30" id="decode_output" class="decode_output" rows="10"><?php echo $output;?></textarea>
 
 </body>
 </html>
