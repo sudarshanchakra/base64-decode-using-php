@@ -21,7 +21,7 @@ if (isset($_POST['decode'])) {
     <title>Base64 Decoder</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Base64 Decoder</h1>
+    <h1>Base64 Decoder</h1>
     <form action="index.php" class="decode_form" method="post">
         <input id="decode_input" type="text" name="decode" class="decode_input" placeholder="Enter Your Text"/>
         <button type="submit" id="decode_button" class="decode_button">Decode</button>
