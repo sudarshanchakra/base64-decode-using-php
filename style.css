@@ -1,3 +1,6 @@
+h1 {
+    text-align: center;
+}
 .decode_input{
     padding: 15px;
     border-radius: 70px;
@@ -12,6 +15,7 @@
     border: 0;
     background-color: #673ab7;
     color: white;
+    cursor:pointer;
 }
 .decode_form{
     display: block;
